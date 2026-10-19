@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>श्री श्री माँ दुर्गा मंदिर | दुर्गोत्सव एवं पूजा महोत्सव</title>
+  <meta name="description" content="श्री श्री माँ दुर्गा मंदिर - पावन दुर्गोत्सव, आरती दर्शन, पूजा समय-सारणी, एवं लाइव दर्शन। माँ भगवती के चरणों में सप्रेम आमंत्रण।">
+
+  <!-- Google Fonts: Rozha One & Cinzel Decorative (Headings), Yantramanav (Devanagari & Latin Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Rozha+One&family=Yantramanav:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Defer Core JavaScript -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Announcement Bar (With Dismiss Button) -->
+  <aside class="announcement-bar" id="announcementBar" role="region" aria-label="मंदिर घोषणा">
+    <div class="container announcement-content">
+      <div class="announcement-text-wrap">
+        <span class="announcement-badge">सूचना</span>
+        <p class="announcement-text">
+          शुभ शारदीय दुर्गोत्सव 2026: महाअष्टमी संधि पूजा एवं आरती का सीधा प्रसारण (Live Darshan) मंदिर के आधिकारिक पटल पर उपलब्ध रहेगा।
+        </p>
+      </div>
+      <button type="button" class="announcement-dismiss-btn" id="dismissAnnouncementBtn" aria-label="सूचना बंद करें">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <a href="#top" class="brand" aria-label="श्री माँ दुर्गा मंदिर मुखपृष्ठ">
+        <div class="emblem" aria-hidden="true">ॐ</div>
+        <div class="brand-text">
+          <span class="brand-title">श्री माँ दुर्गा मंदिर</span>
+          <span class="brand-subtitle">शारदीय दुर्गोत्सव एवं शक्तिपीठ</span>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="मुख्य सूची खोलें">
+        <span class="nav-icon" aria-hidden="true"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" id="primaryNav" aria-label="मुख्य नेविगेशन">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">मंदिर परिचय</a></li>
+          <li class="nav-item"><a href="#schedule" class="nav-link">पूजा कार्यक्रम</a></li>
+          <li class="nav-item"><a href="#live" class="nav-link nav-link--live"><span class="live-dot" aria-hidden="true"></span>लाइव दर्शन</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">दर्शन दीर्घा</a></li>
+          <li class="nav-item"><a href="#visitor-info" class="nav-link">दर्शन निर्देश</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">संपर्क एवं स्थान</a></li>
+          <li class="nav-item"><a href="#donate" class="btn btn--nav-donate">सहयोग / दान</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-media-wrapper">
+        <img src="images/temple-hero.jpg" alt="माँ दुर्गा की भव्य प्रतिमा - श्री माँ दुर्गा मंदिर" class="hero-image" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-card">
+          <p class="hero-mantra">॥ सर्वमंगल मांगल्ये शिवे सर्वार्थ साधिके । शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते ॥</p>
+          <div class="hero-decorative-line" aria-hidden="true">
+            <span class="ornament-leaf">✦</span>
+            <span class="ornament-line"></span>
+            <span class="ornament-leaf">✦</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">जय माँ दुर्गे</h1>
+          <p class="hero-subtitle">शारदीय दुर्गोत्सव की पावन बेला में माँ भगवती के दिव्य दर्शन एवं अनुष्ठान में आपका स्वागत है।</p>
+          <div class="hero-actions">
+            <a href="#live" class="btn btn--primary">लाइव दर्शन देखें</a>
+            <a href="#schedule" class="btn btn--secondary">पूजा समय-सारणी</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temple Introduction Section -->
+    <section id="about" class="section section--about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="frame-ornate">
+              <img src="images/temple-about.jpg" alt="मंदिर गर्भगृह एवं ऐतिहासिक वास्तुकला" class="about-image" loading="lazy">
+            </div>
+          </div>
+          <div class="about-content-column">
+            <span class="section-tag">पवित्र इतिहास एवं परंपरा</span>
+            <h2 class="section-title">श्री माँ दुर्गा मंदिर की आस्था एवं महिमा</h2>
+            <div class="title-separator" aria-hidden="true"></div>
+            <p class="lead-text">
+              दशकों से यह पावन प्रांगण अनगिनत भक्तों की आस्था, भक्ति और सांस्कृतिक चेतना का प्रमुख केंद्र रहा है।
+            </p>
+            <p>
+              प्रत्येक वर्ष शारदीय नवरात्र के शुभ अवसर पर यहाँ विधि-विधान और वैदिक ऋचाओं के उच्चारण के साथ नौ रूपों की आराधना की जाती है। माँ का यह दिव्य धाम समस्त भक्तों के कष्टों का निवारण कर उन्हें सुख, शांति और समृद्धि का वरदान प्रदान करता है।
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">🪔</span>
+                <div>
+                  <strong>अखंड ज्योति</strong>
+                  <p>नवरात्र पर्यंत अखंड दीप प्रज्वलन</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">🔔</span>
+                <div>
+                  <strong>वैदिक अनुष्ठान</strong>
+                  <p>योग्य आचार्यों द्वारा सप्तशती पाठ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Puja Schedule Section -->
+    <section id="schedule" class="section section--schedule">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">पर्व एवं अनुष्ठान</span>
+          <h2 class="section-title">शारदीय दुर्गोत्सव समय-सारणी</h2>
+          <div class="title-separator" aria-hidden="true"></div>
+          <p class="section-description">समस्त पूजा, आरती और महाप्रसाद वितरण का प्रामाणिक विवरण</p>
+        </div>
+
+        <div class="schedule-grid">
+          <article class="schedule-card">
+            <div class="schedule-badge">प्रतिपदा तिथि</div>
+            <h3 class="schedule-event-title">कलश स्थापना एवं शैलपुत्री पूजा</h3>
+            <p class="schedule-time"><span class="schedule-time-icon">⏰</span> प्रातः 06:15 - 08:30 बजे</p>
+            <p class="schedule-desc">घटस्थापना, अखंड ज्योति प्रज्वलन एवं माता शैलपुत्री का प्रथम शृंगार व पूजन।</p>
+          </article>
+
+          <article class="schedule-card">
+            <div class="schedule-badge">सप्तमी तिथि</div>
+            <h3 class="schedule-event-title">नवपत्रिका प्रवेश एवं पट अनावरण</h3>
+            <p class="schedule-time"><span class="schedule-time-icon">⏰</span> प्रातः 07:00 - 10:00 बजे</p>
+            <p class="schedule-desc">पारंपरिक बाजे-गाजे के साथ नवपत्रिका (कोलंबो) प्रवेश एवं माँ के दर्शनार्थ मुख्य कपाट उद्घाटन।</p>
+          </article>
+
+          <article class="schedule-card schedule-card--highlight">
+            <div class="schedule-badge schedule-badge--gold">महाअष्टमी</div>
+            <h3 class="schedule-event-title">महाअष्टमी पूजा एवं संधि पूजा</h3>
+            <p class="schedule-time"><span class="schedule-time-icon">⏰</span> दोपहर 11:30 एवं सायं 07:45 बजे</p>
+            <p class="schedule-desc">अष्टमी महास्नान, 108 कमल पुष्पों से महाअर्चना और 108 दीपों की पावन संधि पूजा।</p>
+          </article>
+
+          <article class="schedule-card">
+            <div class="schedule-badge">महानवमी</div>
+            <h3 class="schedule-event-title">महानवमी हवन एवं कन्या पूजन</h3>
+            <p class="schedule-time"><span class="schedule-time-icon">⏰</span> प्रातः 09:30 - अपराह्न 01:00 बजे</p>
+            <p class="schedule-desc">श्री दुर्गा सप्तशती पूर्णाहुति महायज्ञ, नवकन्या पूजन एवं विशाल महाप्रसाद वितरण।</p>
+          </article>
+
+          <article class="schedule-card">
+            <div class="schedule-badge">विजयादशमी</div>
+            <h3 class="schedule-event-title">सिंदूर खेला एवं प्रतिमा विसर्जन</h3>
+            <p class="schedule-time"><span class="schedule-time-icon">⏰</span> दोपहर 01:30 - सायं 06:00 बजे</p>
+            <p class="schedule-desc">पारंपरिक देवी वरण, सुहागिनों द्वारा सिंदूर उत्सव, दर्पण विसर्जन एवं पावन विसर्जन शोभायात्रा।</p>
+          </article>
+
+          <article class="schedule-card">
+            <div class="schedule-badge">दैनिक आरती</div>
+            <h3 class="schedule-event-title">प्रातः एवं सांध्य महाआरती</h3>
+            <p class="schedule-time"><span class="schedule-time-icon">⏰</span> प्रातः 07:30 बजे | सायं 07:00 बजे</p>
+            <p class="schedule-desc">शंख, घंटा एवं ढाक की मंगल ध्वनि के साथ नित्य महाआरती व भोग दर्शन।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Darshan Section -->
+    <section id="live" class="section section--live">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag section-tag--light">प्रत्यक्ष दर्शन</span>
+          <h2 class="section-title section-title--light">लाइव दर्शन (सीधा प्रसारण)</h2>
+          <div class="title-separator title-separator--gold" aria-hidden="true"></div>
+          <p class="section-description section-description--light">जो भक्त मंदिर प्रांगण तक आने में असमर्थ हैं, वे घर बैठे माँ के श्रीचरणों का आशीर्वाद प्राप्त करें।</p>
+        </div>
+
+        <div class="live-player-container">
+          <div class="live-status-bar">
+            <span class="status-indicator" id="liveStatusIndicator">
+              <span class="status-pulse" aria-hidden="true"></span>
+              लाइव स्ट्रीम स्थिति: आगामी प्रसारण (Offline)
+            </span>
+            <span class="status-schedule" id="liveStatusSchedule">अगला सीधा प्रसारण: सांध्य महाआरती (सायं 07:00 बजे)</span>
+          </div>
+
+          <div class="live-screen-placeholder" role="region" aria-label="लाइव प्रसारण विंडो">
+            <div class="screen-ornament" aria-hidden="true">🪔</div>
+            <h3 class="screen-heading" id="liveScreenHeading">मंदिर गर्भगृह लाइव प्रसारण केंद्र</h3>
+            <p class="screen-message" id="liveScreenMessage">
+              वर्तमान में सीधा प्रसारण ऑफलाइन है। निर्धारित आरती एवं विशेष पूजा के समय यह विंडो स्वतः सक्रिय हो जाएगी।
+            </p>
+            <div class="screen-guidance">
+              <span>अनुष्ठान के समय इस पृष्ठ को पुनः लोड करें</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section section--gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">दर्शन एवं उत्सव स्मृतियाँ</span>
+          <h2 class="section-title">पावन दर्शन दीर्घा</h2>
+          <div class="title-separator" aria-hidden="true"></div>
+          <p class="section-description">दुर्गोत्सव, दिव्य शृंगार एवं मंदिर प्रांगण की कुछ अलौकिक झलकियाँ (बड़ा दृश्य देखने हेतु क्लिक करें)</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <div class="gallery-media-wrapper">
+              <img src="images/gallery-1.jpg" alt="माँ दुर्गा का स्वर्ण मुकुट शृंगार" class="gallery-image" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">दिव्य माता शृंगार दर्शन</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-media-wrapper">
+              <img src="images/gallery-2.jpg" alt="मंदिर मंडप का भव्य पारंपरिक प्रवेश द्वार" class="gallery-image" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">भव्य पूजा पंडाल एवं स्वागत द्वार</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-media-wrapper">
+              <img src="images/gallery-3.jpg" alt="संध्या आरती में दीप प्रज्वलन" class="gallery-image" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">108 दीप प्रज्वलन अनुष्ठान</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-media-wrapper">
+              <img src="images/gallery-4.jpg" alt="वैदिक आचार्यों द्वारा महाहवन" class="gallery-image" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">महानवमी पूर्णाहुति हवन</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-media-wrapper">
+              <img src="images/gallery-5.jpg" alt="भक्तों द्वारा कन्या पूजन समारोह" class="gallery-image" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">सद्भाव एवं कन्या पूजन</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-media-wrapper">
+              <img src="images/gallery-6.jpg" alt="ढाक वादन एवं भक्ति नृत्य" class="gallery-image" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">पारंपरिक ढाक वादन एवं धुनुची नृत्य</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visitor Information Section -->
+    <section id="visitor-info" class="section section--visitor">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">सुविधा एवं अनुशासन</span>
+          <h2 class="section-title">श्रद्धालु दर्शन निर्देश एवं नियम</h2>
+          <div class="title-separator" aria-hidden="true"></div>
+          <p class="section-description">दर्शन की सुगमता, सुरक्षा और मंदिर की पवित्रता बनाए रखने हेतु सहयोग दें।</p>
+        </div>
+
+        <div class="visitor-grid">
+          <article class="visitor-card">
+            <div class="visitor-icon" aria-hidden="true">⏱️</div>
+            <h3 class="visitor-title">मंदिर दर्शन समय</h3>
+            <p>प्रातः काल: 05:30 बजे से दोपहर 01:00 बजे तक।<br>सायं काल: 04:30 बजे से रात्रि 10:30 बजे तक। (भोग के समय 1:00 से 4:30 कपाट बंद रहेंगे)</p>
+          </article>
+
+          <article class="visitor-card">
+            <div class="visitor-icon" aria-hidden="true">👞</div>
+            <h3 class="visitor-title">जूता-चप्पल स्टैंड</h3>
+            <p>मंदिर के उत्तरी प्रवेश द्वार के समीप निःशुल्क जूता-चप्पल घर उपलब्ध है। कृपया जूते निर्दिष्ट स्थान पर ही जमा करें।</p>
+          </article>
+
+          <article class="visitor-card">
+            <div class="visitor-icon" aria-hidden="true">♿</div>
+            <h3 class="visitor-title">वरिष्ठ नागरिक एवं दिव्यांग सुविधा</h3>
+            <p>वरिष्ठ नागरिकों और दिव्यांगों के लिए व्हीलचेयर एवं रैंप मार्ग की विशेष व्यवस्था प्रवेश द्वार संख्या 2 पर उपलब्ध है।</p>
+          </article>
+
+          <article class="visitor-card">
+            <div class="visitor-icon" aria-hidden="true">📱</div>
+            <h3 class="visitor-title">फोटोग्राफी एवं अनुशासन</h3>
+            <p>गर्भगृह के भीतर मोबाइल फोन का उपयोग एवं वीडियोग्राफी पूर्णतः निषेध है। मंदिर परिसर में स्वच्छता व शांति बनाए रखें।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Section (Strictly QR Code Only) -->
+    <section id="donate" class="section section--donation">
+      <div class="container">
+        <div class="donation-wrapper">
+          <div class="donation-header">
+            <span class="section-tag section-tag--light">सद्भाव एवं सहयोग</span>
+            <h2 class="donation-title">माँ दुर्गा की सेवा में अपना योगदान दें</h2>
+            <div class="title-separator title-separator--gold" aria-hidden="true"></div>
+            <p class="donation-lead">
+              आपके द्वारा श्रद्धापूर्वक दिया गया दान मंदिर के दैनिक भोग, महाप्रसाद, वैदिक अनुष्ठान और जनसेवा कार्यों में उपयोग किया जाता है।
+            </p>
+          </div>
+
+          <div class="donation-content-box">
+            <div class="qr-display-panel">
+              <div class="qr-frame">
+                <img src="images/temple-donation-qr.png" alt="श्री माँ दुर्गा मंदिर आधिकारिक UPI QR कोड" class="qr-image">
+              </div>
+              <p class="qr-scan-badge">आधिकारिक मंदिर UPI क्यूआर कोड</p>
+            </div>
+
+            <div class="donation-guidance">
+              <h3 class="guidance-heading">दान भुगतान निर्देश</h3>
+              <ul class="guidance-list">
+                <li>
+                  <span class="list-bullet" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>UPI स्कैनर का प्रयोग करें:</strong>
+                    Google Pay, PhonePe, Paytm, BHIM या किसी भी अन्य UPI ऐप द्वारा उपरोक्त QR कोड स्कैन करें।
+                  </div>
+                </li>
+                <li>
+                  <span class="list-bullet" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>प्राप्तकर्ता नाम का सत्यापन करें:</strong>
+                    भुगतान करने से पहले स्क्रीन पर मंदिर ट्रस्ट का आधिकारिक नाम अवश्य जांच लें।
+                  </div>
+                </li>
+                <li>
+                  <span class="list-bullet" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>रसीद एवं पावती:</strong>
+                    दान की पावती हेतु लेन-देन संदर्भ संख्या (UTR No.) मंदिर कार्यालय के ईमेल या व्हाट्सएप पर प्रेषित करें।
+                  </div>
+                </li>
+              </ul>
+              <div class="donation-trust-note">
+                <p>समस्त दान केवल मंदिर के आधिकारिक खाते में ही स्वीकार किए जाते हैं। किसी भी अन्य अनधिकृत खाते में राशि प्रेषित न करें।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">मार्ग एवं संपर्क</span>
+          <h2 class="section-title">मंदिर स्थान एवं कार्यालय</h2>
+          <div class="title-separator" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 class="contact-subheading">संपर्क विवरण</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>पता:</strong>
+                  <p>श्री माँ दुर्गा मंदिर प्रांगण, मुख्य मंदिर मार्ग, सांस्कृतिक क्षेत्र</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>हेल्पलाइन दूरभाष:</strong>
+                  <p><a href="tel:+919876543210">+91 98765 43210</a> / <a href="tel:+911123456789">+91 11 2345 6789</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>ईमेल:</strong>
+                  <p><a href="mailto:info@shridurgamandir.org">info@shridurgamandir.org</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">🕒</span>
+                <div>
+                  <strong>कार्यालय समय:</strong>
+                  <p>प्रातः 09:00 बजे से सायं 06:00 बजे तक (दैनिक)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-container" role="region" aria-label="मंदिर का भौगोलिक मानचित्र">
+            <div class="map-placeholder">
+              <span class="map-pin" aria-hidden="true">📍</span>
+              <h4>मंदिर स्थिति मानचित्र (Google Map)</h4>
+              <p>मुख्य रेलवे स्टेशन से दूरी: 3.5 किमी | मुख्य बस टर्मिनल से दूरी: 2.0 किमी</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn--outline-dark">गूगल मैप्स पर दिशा देखें</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Photo Gallery Accessible Lightbox Dialog -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="बड़ा चित्र दृश्य" hidden>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-btn lightbox-btn--close" id="lightboxCloseBtn" aria-label="चित्र बंद करें (Esc)">
+        &times;
+      </button>
+      
+      <button type="button" class="lightbox-btn lightbox-btn--nav lightbox-btn--prev" id="lightboxPrevBtn" aria-label="पिछला चित्र">
+        &#10094;
+      </button>
+      
+      <div class="lightbox-stage">
+        <img src="images/gallery-1.jpg" alt="" class="lightbox-image" id="lightboxImage">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+      
+      <button type="button" class="lightbox-btn lightbox-btn--nav lightbox-btn--next" id="lightboxNextBtn" aria-label="अगला चित्र">
+        &#10095;
+      </button>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col--brand">
+          <div class="footer-emblem" aria-hidden="true">ॐ</div>
+          <h3 class="footer-brand-title">श्री माँ दुर्गा मंदिर ट्रस्ट</h3>
+          <p class="footer-tagline">धर्म, सेवा और संस्कृति का पावन तीर्थ</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">त्वरित लिंक</h4>
+          <ul class="footer-links">
+            <li><a href="#about">मंदिर परिचय</a></li>
+            <li><a href="#schedule">पूजा समय-सारणी</a></li>
+            <li><a href="#live">लाइव दर्शन</a></li>
+            <li><a href="#gallery">दर्शन दीर्घा</a></li>
+            <li><a href="#visitor-info">श्रद्धालु निर्देश</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">महत्वपूर्ण सूचना</h4>
+          <p class="footer-notice">दुर्गोत्सव के दिनों में होने वाली भारी भीड़ को ध्यान में रखते हुए कतारबद्ध दर्शन व्यवस्था का पालन करें।</p>
+          <div class="footer-social-wrapper">
+            <span class="footer-social-label">आधिकारिक चैनल:</span>
+            <div class="footer-social-links">
+              <a href="#" class="social-link" aria-label="यूट्यूब चैनल">YouTube</a>
+              <a href="#" class="social-link" aria-label="फेसबुक पृष्ठ">Facebook</a>
+              <a href="#" class="social-link" aria-label="इंस्टाग्राम">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">© 2026 श्री माँ दुर्गा मंदिर ट्रस्ट। सर्वाधिकार सुरक्षित।</p>
+        <p class="developer-credit">माँ भगवती के चरणों में सप्रेम समर्पित।</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
